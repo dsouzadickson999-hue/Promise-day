@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Day - For Rose 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffffff 0%, #ffe6f0 50%, #ffffff 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.2);
+            text-align: center;
+            border: 3px solid #ffb6d9;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+        }
+
+        .subtitle {
+            color: #ff69b4;
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .rose-decoration {
+            font-size: 50px;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .promises-section {
+            margin: 40px 0;
+        }
+
+        .promise-title {
+            font-size: 28px;
+            color: #ff1493;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .promise-box {
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe6f0 100%);
+            border-left: 5px solid #ff69b4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .promise-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+        }
+
+        .promise-box p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .promise-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .message {
+            background: linear-gradient(135deg, #ffe6f0 0%, #fff5f8 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+            border: 2px solid #ffb6d9;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #ff69b4;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .promise-title {
+                font-size: 24px;
+            }
+
+            .promise-box p {
+                font-size: 14px;
+            }
+        }
+
+        .hearts-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.15;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts-bg">
+        <span class="heart" style="left: 10%; animation-delay: 0s;">💕</span>
+        <span class="heart" style="left: 25%; animation-delay: 2s;">💗</span>
+        <span class="heart" style="left: 40%; animation-delay: 4s;">💖</span>
+        <span class="heart" style="left: 55%; animation-delay: 1s;">💕</span>
+        <span class="heart" style="left: 70%; animation-delay: 3s;">💗</span>
+        <span class="heart" style="left: 85%; animation-delay: 5s;">💖</span>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="date-badge">February 11, 2025</div>
+            <h1>Promise Day</h1>
+            <div class="subtitle">A Special Day for Special Promises</div>
+        </div>
+
+        <div class="rose-decoration">🌹</div>
+
+        <div class="promises-section">
+            <div class="promise-title">My Promises to You</div>
+            
+            <div class="promise-box">
+                <p><span class="promise-icon">💗</span> I promise to love you unconditionally, through every sunrise and sunset, through every challenge and triumph.</p>
+            </div>
+
+            <div class="promise-box">
+                <p><span class="promise-icon">🤝</span> I promise to stand by your side, support your dreams, and be your strength when you need it most.</p>
+            </div>
+
+            <div class="promise-box">
+                <p><span class="promise-icon">😊</span> I promise to make you smile every single day and fill your life with laughter and joy.</p>
+            </div>
+
+            <div class="promise-box">
+                <p><span class="promise-icon">🌟</span> I promise to cherish every moment we share and create beautiful memories together that last forever.</p>
+            </div>
+
+            <div class="promise-box">
+                <p><span class="promise-icon">💫</span> I promise to be honest, loyal, and true to you, today and for all the days to come.</p>
+            </div>
+        </div>
+
+        <div class="message">
+            Dear Rose,<br><br>
+            On this Promise Day, I want you to know that you mean the world to me. Every promise I make to you comes from the deepest part of my heart. You are my everything, and I promise to love and cherish you forever. Thank you for being the most beautiful part of my life. 🌹💕
+        </div>
+
+        <div class="footer">
+            Forever Yours 💞<br>
+            Happy Promise Day, My Love!
+        </div>
+    </div>
+</body>
+</html>
